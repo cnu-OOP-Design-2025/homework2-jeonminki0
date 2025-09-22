@@ -138,6 +138,7 @@ float getTotalAverage(StudentStruct* students, int numOfStudent){
     return sum/numOfStudent;
 }
 
+
 void printStudentInfo(StudentStruct* students, int numOfStudent, int id){
     int idx = findStudentByStudentID(students, numOfStudent, id);
     if(idx >= 0)
