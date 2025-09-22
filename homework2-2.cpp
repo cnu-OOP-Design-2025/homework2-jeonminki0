@@ -68,7 +68,7 @@ int findBestStudentInMidterm(StudentStruct* students, int numOfStudent){
 int findBestStudentInFinal(StudentStruct* students, int numOfStudent){
     int bestId=0;
     for(int i=1; i<numOfStudent; ++i)
-        if(students[i].record.final>students[bestIdx].record.final)
+        if(students[i].record.final>students[bestId].record.final)
             bestId=i;
     return students[bestId].id;
 }
@@ -78,7 +78,7 @@ int findBestStudent(StudentStruct* students, int numOfStudent){
     int bestId=0;
     for(int i=1; i<numOfStudent; ++i)
         if((students[i].record.midterm+students[i].record.final)>
-            (students[bestIdx].record.midterm+students[bestIdx].record.final))
+            (students[bestId].record.midterm+students[bestId].record.final))
             bestId=i;
     return students[bestId].id;
 }
